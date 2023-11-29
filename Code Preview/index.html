@@ -7,45 +7,55 @@
     <title></title>
   </head>
   <body>
-    <div class="card">
-      <div class="header">
-        <div class="top">
-          <div class="circle">
-            <span class="red circle2"></span>
-          </div>
-          <div class="circle">
-            <span class="yellow circle2"></span>
-          </div>
-          <div class="circle">
-            <span class="green circle2"></span>
-          </div>
-          <div class="title">
-            <p id="title2">style.css</p>
+    <div class="container" id="container">
+      <div class="header-container">
+        <h1 id="title">Code Preview</h1>
+        <label class="switch">
+          <input class="mycheckbox" type="checkbox" onclick="validate()">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="card" id="card">
+        <div class="header">
+          <div class="top">
+            <div class="circle">
+              <span class="red circle2"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow circle2"></span>
+            </div>
+            <div class="circle">
+              <span class="green circle2"></span>
+            </div>
+            <div class="title">
+              <p id="title2">style.css</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="code-container">
-        <textarea class="area" id="code" name="code" readonly="">
-    .card {
-      width: 300px;
-      height: 400px;
-      margin: 0 auto;
-      background-color: #313638;
-      border-radius: 8px;
-      z-index: 1;
-      box-shadow: 0px 10px 10px gray;
-    }
-    
-    .top {
-      display: flex;
-      align-items: center;
-      padding-left: 10px;
-    }
-    
-    .circle {
-      padding: 0 4px;
-    }</textarea>
+        <div class="code-container">
+          <textarea class="area" id="code" name="code" readonly="">
+      .card {
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: #313638;
+        border-radius: 8px;
+        z-index: 1;
+        box-shadow: 0px 10px 10px gray;
+      }
+      
+      .top {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      
+      .circle {
+        padding: 0 4px;
+      }</textarea>
+        </div>
       </div>
     </div>
+  <script src="index.js"></script>
   </body>
 </html>
